@@ -1,0 +1,6 @@
+Dog calculator pseudocode
+
+Ask for user's dog's name
+Ask for user's dog's age
+Multiply dog's age by 7
+Print string - Your dog [name] is [result] years old in human years
