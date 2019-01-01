@@ -22,7 +22,7 @@ def next_gen():
     for i in range(0, height):
         for j in range(0, width):
             cell = 0
-            print('Checking cell', i, j)
+#            print('Checking cell', i, j)
             count = count_neighbours(grid_model, i, j)
 
             if grid_model[i][j] == 0:
@@ -32,7 +32,7 @@ def next_gen():
                 if count == 2 or count == 3:
                     cell = 1
             next_grid_model[i][j] = cell
-            print('New value is', next_grid_model[i][j])
+#            print('New value is', next_grid_model[i][j])
     temp = grid_model
     grid_model = next_grid_model
     next_grid_model = temp
