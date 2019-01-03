@@ -75,12 +75,17 @@ glider_gun_pattern = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
 
+def clear():
+        global grid_view
+
+        for i in range(0, height):
+            for j in range(0, width):
+                grid_model[i][j] = 0
+
 def load_pattern(pattern, x_offset=0, y_offset=0):
     global grid_view
 
-    for i in range(0, height):
-        for j in range(0, width):
-            grid_model[i][j] = 0
+    clear()
 
     j = y_offset
 
